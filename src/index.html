@@ -1,0 +1,22 @@
+<div class="menu-features">
+  <h2>Features</h2>
+  <nav>
+    <a routerLink="/features/students">Students</a>
+    <a routerLink="/features/course">Course</a>
+    <a routerLink="/features/communication">Communication</a>
+  </nav>
+  
+  <!-- Ny content'ny sous-menu -->
+  <router-outlet></router-outlet> 
+</div>
+
+<!-- public-layout.component.html -->
+<div class="menu-public">
+  <h2>Public</h2>
+  <nav>
+    <a routerLink="/public/login">Login</a>
+    <a routerLink="/public/actuality">Actuality</a>
+  </nav>
+  
+  <router-outlet></router-outlet>
+</div>

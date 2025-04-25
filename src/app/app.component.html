@@ -1,0 +1,25 @@
+<nav>
+  <!-- Menu principal -->
+  <ul>
+    <li>
+      <a routerLink="/features" routerLinkActive="active">Features</a>
+      <!-- Sous-menu Features -->
+      <ul *ngIf="$router.isActive('/features', false)">
+        <li><a routerLink="/features/students" routerLinkActive="active">Students</a></li>
+        <li><a routerLink="/features/course" routerLinkActive="active">Course</a></li>
+        <li><a routerLink="/features/communication" routerLinkActive="active">Communication</a></li>
+      </ul>
+    </li>
+    
+    <li>
+      <a routerLink="/public" routerLinkActive="active">Public</a>
+      <!-- Sous-menu Public -->
+      <ul *ngIf="$router.isActive('/public', false)">
+        <li><a routerLink="/public/login" routerLinkActive="active">Login</a></li>
+        <li><a routerLink="/public/actuality" routerLinkActive="active">Actuality</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
