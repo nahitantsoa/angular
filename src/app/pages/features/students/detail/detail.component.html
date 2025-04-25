@@ -1,0 +1,7 @@
+<p>list works!</p>
+<h1> List des etudiants</h1>
+<ul>
+  <li  *ngFor="let student of list" [ngClass]="myClass(student)"> {{student.nom}} - {{student.prenom}} </li>
+</ul>
+
+

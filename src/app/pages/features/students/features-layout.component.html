@@ -1,0 +1,41 @@
+<div class="features-container">
+    <!-- Menu an'ny Features -->
+    <nav class="features-menu">
+      <h2>Features</h2>
+      <ul>
+        <!-- Sous-menu STUDENTS -->
+        <li>
+          <a routerLink="/features/students" routerLinkActive="active">
+            Students
+          </a>
+        </li>
+  
+        <!-- Sous-menu COURSE miaraka aminy EQT -->
+        <li>
+          <a routerLink="/features/course" routerLinkActive="active">
+            Course
+          </a>
+          <!-- Sous-sous-menu EQT -->
+          <ul *ngIf="isRouteActive('/features/course')">
+            <li>
+              <a routerLink="/features/course/eqt" routerLinkActive="active">
+                EQT
+              </a>
+            </li>
+          </ul>
+        </li>
+  
+        <!-- Sous-menu COMMUNICATION -->
+        <li>
+          <a routerLink="/features/communication" routerLinkActive="active">
+            Communication
+          </a>
+        </li>
+      </ul>
+    </nav>
+  
+    <!-- Container ho an'ny contenu -->
+    <div class="features-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
