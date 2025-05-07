@@ -12,8 +12,8 @@ nav ul {
   nav ul ul {
     display: none;
     position: absolute;
-    background: white;
-    border: 1px solid #ddd;
+    background: rgb(14, 236, 252);
+    border: 1px solid #000000;
   }
   
   nav li:hover ul {

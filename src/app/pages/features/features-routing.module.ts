@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import {RouterModule, Routes} from '@angular/router';
 import {FeaturesLayoutComponent } from "./features-layout.component";
 import {StudentsComponent } from "./students/students.component";
-import {CourseEdtComponent} from './course/course.module';
+import {CourseComponent} from './course/course';
 import { CommunicationComponent } from "./communication/communication.component";
 import { from } from "rxjs";
 import { Router } from "express";
@@ -18,7 +18,7 @@ const routes: Routes = [
         { 
           path: 'course', 
           children: [
-            { path: 'edt', component: CourseEdtComponent }
+            { path: 'edt', component: CourseComponent }
           ] 
         },
               

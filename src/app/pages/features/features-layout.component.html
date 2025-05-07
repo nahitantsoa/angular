@@ -16,7 +16,7 @@
             Course
           </a>
           <!-- Sous-sous-menu EQT -->
-          <ul *ngIf="isRouteActive('/features/course')">
+          <ul *NgIf="isRouteActive('/features/course')">
             <li>
               <a routerLink="/features/course/eqt" routerLinkActive="active">
                 EQT
@@ -36,6 +36,5 @@
   
     <!-- Container ho an'ny contenu -->
     <div class="features-content">
-      <router-outlet></router-outlet>
     </div>
   </div>

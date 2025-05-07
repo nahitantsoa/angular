@@ -1,10 +1,11 @@
+<header>
 <nav>
   <!-- Menu principal -->
   <ul>
     <li>
       <a routerLink="/features" routerLinkActive="active">Features</a>
       <!-- Sous-menu Features -->
-      <ul *ngIf="$router.isActive('/features', false)">
+      <ul *NgIf="$router.isActive('/features', true)">
         <li><a routerLink="/features/students" routerLinkActive="active">Students</a></li>
         <li><a routerLink="/features/course" routerLinkActive="active">Course</a></li>
         <li><a routerLink="/features/communication" routerLinkActive="active">Communication</a></li>
@@ -14,12 +15,13 @@
     <li>
       <a routerLink="/public" routerLinkActive="active">Public</a>
       <!-- Sous-menu Public -->
-      <ul *ngIf="$router.isActive('/public', false)">
+      <ul *NgIf="$router.isActive('/public', true)">
         <li><a routerLink="/public/login" routerLinkActive="active">Login</a></li>
         <li><a routerLink="/public/actuality" routerLinkActive="active">Actuality</a></li>
       </ul>
     </li>
   </ul>
 </nav>
+</header>
 
 <router-outlet></router-outlet>

@@ -4,9 +4,6 @@ import {StudentsComponent} from './students.component';
 import {FormComponent} from './form/form.component';
 import {ListComponent} from './list/list.component';
 import {FormsModule} from '@angular/forms';
-import {SharedModule} from '../app.module';
-
-
 
 @NgModule({
   declarations: [StudentsComponent, FormComponent, ListComponent],
@@ -17,7 +14,7 @@ import {SharedModule} from '../app.module';
     NgClass,
   ],
   exports: [
-    StudentsComponent
+  StudentsComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
